@@ -8,16 +8,19 @@ body {
   font-weight: 800;
 }
 
-.small-para {
-  font-size: 14px;
-  font-weight: 800;
-}
 
 .para {
   font-size: 22px;
 }
 
-.confirm {
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+/*--------------------------*/
+
+#confirm-button {  /*Al ser una id tiene mayor peso en especificidad que una clase*/
   background: green;
   color: white;
   font-weight: bold;
@@ -29,7 +32,8 @@ body {
   font-size: 20px;
 }
 
-.child {
+
+.text.child {   /*al sumar dos claes, le gana en especifidad a tipo y clase*/
   color: rgb(0, 0, 0);
   font-weight: 800;
   font-size: 14px;
