@@ -1,0 +1,32 @@
+.caja1{
+
+  box-sizing: content-box; /* valor por defecto, aunque no lo escribas */
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+/*
+
+
+Ancho total = width + padding (izq+der) + border (izq+der)
+Ancho total = 300px + (20px×2) + (5px×2) = 350px
+
+*/
+
+
+
+.caja2{
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px;
+  border: 5px solid black;
+}
+
+/* Aplicando la propiedad box-sizing: border-box; 
+(width + padding - border) = 300px
+
+El Ancho total = 300px (fijo, no cambia)
+El contenido real se reduce internamente para hacer lugar al padding/border
+
+*/ 
