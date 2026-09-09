@@ -1,0 +1,16 @@
+.flex-container{
+
+  display: flex;
+
+}
+.item {
+  flex-grow: 1;
+  margin: 10px;
+  width: 100px;
+  color: white;
+}
+
+.uno   { background-color: black; }
+.dos   { background-color: blue; 
+           flex-grow: 2;}
+.tres  { background-color: green; }
