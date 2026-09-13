@@ -1,16 +1,32 @@
-.flex-container{
-
+.flex-container {
   display: flex;
+  width: 600px;
+  padding: 10px;
+  background-color: lightgrey;
 
 }
+
 .item {
-  flex-grow: 1;
+  flex-basis: 200px;
+  flex-grow: 0;
+  flex-shrink: 1;
   margin: 10px;
-  width: 100px;
-  color: white;
+  padding: 30px;
+  border: 2px solid black;
 }
 
-.uno   { background-color: black; }
-.dos   { background-color: blue; 
-           flex-grow: 2;}
-.tres  { background-color: rgb(4, 255, 4); }
+.uno {
+  background-color: black;
+}
+
+.dos {
+  background-color: blue;
+  flex-grow: 2;
+  order:3;
+
+}
+
+.tres {
+  background-color: rgb(4, 255, 4);
+  flex-shrink: 4;
+}

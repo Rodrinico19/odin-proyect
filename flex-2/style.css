@@ -1,32 +1,3 @@
-.flex-container {
-  display: flex;
-  background-color: #ff0000;
-  flex-flow: row wrap; /*flex-direction: row;*/ /*flex-wrap: wrap;*/
-  justify-content: space-evenly;  /* Alinea los elementos horizontalmente al principio
-                                    space-between; // Distribuye el espacio entre los elementos hijos
-                                    space-around; // Distribuye el espacio alrededor de los elementos hijos     
-                                    speace-evenly; // Distribuye el espacio entre los elementos hijos de manera uniforme
-  
-                                                */
-   
-                                                align-items: center; /* Alinea los elementos verticalmente al centro*/
-  
-  
-}
-
-
-.flex-container div {
-  background-color: #00ff00;
-  padding: 50px;
-  width: 100px;
-  margin: 10px;
-  color: white;
-  border: 2px solid black;
-  font-size: 20px;
-  text-align: center;
-}
-
-
 /*Propiedades que tiene el elemento Padre
   
     * flex-direction: row; // Alinea los elementos hijos en una fila
@@ -54,7 +25,7 @@
                    flex-start; // Alinea los elementos hijos verticalmente al inicio del contenedor
                    flex-end; // Alinea los elementos hijos verticalmente al final del contenedor
                    stretch; // Alinea los elementos hijos verticalmente estirados
-                   baseline; // Alinea los elementos hijos verticalmente en la línea base del contenedor
+                   baseline; // Alinea los elementos hijos verticalmente en la línea base del contenedor.
 
     * align-content: center;  FILAS // Alinea las líneas de los elementos hijos verticalmente en el centro
                     flex-start; // Alinea las líneas de los elementos hijos verticalmente al inicio del contenedor
@@ -70,6 +41,64 @@ mientras que align-content alinea y distribuye el espacio entre varias filas com
 
 
   */
+
+
+
+.flex-container {
+  display: flex;
+  background-color: #ff0000;
+  /*flex-flow: row wrap; /*flex-direction: row;*/ /*flex-wrap: wrap;*/
+  /*justify-content: space-evenly; */ /* Alinea los elementos horizontalmente al principio
+                                    space-between; // Distribuye el espacio entre los elementos hijos
+                                    space-around; // Distribuye el espacio alrededor de los elementos hijos     
+                                    speace-evenly; // Distribuye el espacio entre los elementos hijos de manera uniforme
+  
+                                                */
+   /*align-items: baseline;*/     
+  
+  /*align-content: center;*/
+  /*justify-content: center; /*centrar elementos*/
+}
+
+
+/*Flex items
+Todoslos elementos hijos del contenedor padre, se convierte en elementos flexibles*/
+ 
+/* flex-grow: 1; // Permite que los elementos hijos crezcan para llenar el espacio disponible
+   flex-shrink: 1; // Permite que los elementos hijos se encojan para ajustarse al espacio disponible
+   flex-basis: auto; // Establece el tamaño inicial de los elementos hijos antes de que se apliquen las propiedades flex-grow y flex-shrink
+   flex: 1 1 auto; // Combina las propiedades flex-grow, flex-shrink y flex-basis en una sola propiedad
+   order: 0; // Establece el orden de los elementos hijos dentro del contenedor padre
+   align-self: auto; // Permite que un elemento hijo se alinee de manera diferente a los demás elementos hijos dentro del contenedor padre
+
+
+
+*/
+
+
+.flex-container div {
+  background-color: #00ff00;
+  padding: 50px;
+  width: 100px;
+  margin: 10px;
+  color: white;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.flex-item-1 {
+  flex-grow: 2; /* Permite que el elemento crezca para llenar el espacio disponible */
+  flex-basis: 200px; /* Establece el tamaño inicial del elemento antes de que se apliquen las propiedades flex-grow y flex-shrink */
+  background-color: #0084ff;
+
+  order:4;
+}
+
+
+
+
 
 
 
