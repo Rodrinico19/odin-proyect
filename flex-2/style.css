@@ -1,0 +1,70 @@
+.flex-container {
+  display: flex;
+  background-color: #ff0000;
+  flex-flow: row wrap; /*flex-direction: row;*/ /*flex-wrap: wrap;*/
+  justify-content: space-evenly;  /* Alinea los elementos horizontalmente al principio
+                                    space-between; // Distribuye el espacio entre los elementos hijos
+                                    space-around; // Distribuye el espacio alrededor de los elementos hijos     
+                                    speace-evenly; // Distribuye el espacio entre los elementos hijos de manera uniforme
+  
+                                                */
+   
+                                                align-items: center; /* Alinea los elementos verticalmente al centro*/
+  
+  
+}
+
+
+.flex-container div {
+  background-color: #00ff00;
+  padding: 50px;
+  width: 100px;
+  margin: 10px;
+  color: white;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+/*Propiedades que tiene el elemento Padre
+  
+    * flex-direction: row; // Alinea los elementos hijos en una fila
+       
+          column; // Alinea los elementos hijos en una columna
+          comumn-reverse; // Alinea los elementos hijos en una columna invertida
+          row; // Alinea los elementos hijos en una fila
+          row-reverse; // Alinea los elementos hijos en una fila invertida
+
+    * flex-wrap: wrap; // Permite que los elementos hijos se ajusten a la siguiente línea si no caben en la fila
+
+          wrap; // Permite que los elementos hijos se ajusten a la siguiente línea si no caben en la fila
+          nowrap; // No permite que los elementos hijos se ajusten a la siguiente línea si no
+          wrap-reverse; // Permite que los elementos hijos se ajusten a la siguiente línea si no caben en la fila, pero en orden inverso
+
+   * flex-flow: row wrap; // Combina las propiedades flex-direction (linea) y flex-wrap (columna)
+              
+ 
+ * justify-content: space-between; // Distribuye el espacio entre los elementos hijos
+                    center; // Centra los elementos hijos horizontalmente
+                    flex-start; // Alinea los elementos hijos al inicio del contenedor
+                    flex-end; // Alinea los elementos hijos al final del contenedor
+                    
+    * align-items: center; // Alinea los elementos hijos verticalmente en el centro
+                   flex-start; // Alinea los elementos hijos verticalmente al inicio del contenedor
+                   flex-end; // Alinea los elementos hijos verticalmente al final del contenedor
+                   stretch; // Alinea los elementos hijos verticalmente estirados
+                   baseline; // Alinea los elementos hijos verticalmente en la línea base del contenedor
+
+    * align-content: center;  FILAS // Alinea las líneas de los elementos hijos verticalmente en el centro
+                    flex-start; // Alinea las líneas de los elementos hijos verticalmente al inicio del contenedor
+                    flex-end; // Alinea las líneas de los elementos hijos verticalmente al final del contenedor
+                    stretch; // Alinea las líneas de los elementos hijos verticalmente estiradas
+                    space-between; // Distribuye el espacio entre las líneas de los elementos hijos
+                    space-around; // Distribuye el espacio alrededor de las líneas de los elementos hijos                                     
+       
+  
+  */
+
+
+

@@ -13,4 +13,4 @@
 .uno   { background-color: black; }
 .dos   { background-color: blue; 
            flex-grow: 2;}
-.tres  { background-color: green; }
+.tres  { background-color: rgb(4, 255, 4); }
