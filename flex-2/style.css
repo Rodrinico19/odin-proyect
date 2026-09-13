@@ -64,6 +64,11 @@
                     space-around; // Distribuye el espacio alrededor de las líneas de los elementos hijos                                     
        
   
+La diferencia principal es que align-items alinea a los elementos individuales dentro de su propia fila, 
+mientras que align-content alinea y distribuye el espacio entre varias filas completas.
+
+
+
   */
 
 
