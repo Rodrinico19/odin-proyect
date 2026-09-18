@@ -1,0 +1,85 @@
+/* this is some magical font-importing.  
+you'll learn about it later. */
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital,wght@0,400;1,900&display=swap');
+
+body {
+  margin: 0;
+  background: #eee;
+  font-family: Besley, serif;
+}
+
+
+/* CONTENEDOR PRINCIPAL: acomoda .left y .right en los extremos.
+   Como solo tiene 2 hijos directos, justify-content: space-between
+   manda uno a la izquierda, el otro a la derecha, y el hueco sobrante
+   queda en el medio (por eso el botón + avatar "se van" a la derecha). */
+
+
+.header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 0 8px rgba(0,0,0,.1);
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  padding:8px;
+
+
+
+}
+
+
+/* SUBGRUPOS: cada uno es su propio contenedor flex, independiente
+   del .header. Por eso el gap de acá (16px entre logo/links y
+   entre botón/avatar) no tiene nada que ver con el gap de .header. */
+
+.left,
+.right {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+
+
+}
+
+.profile-image {
+  background: rebeccapurple;
+  box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+}
+
+.logo {
+  color: rebeccapurple;
+  font-size: 32px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  background: rebeccapurple;
+  color: white;
+  padding: 8px 24px;
+}
+
+a {
+  /* this removes the line under our links */
+  text-decoration: none;
+  color: rebeccapurple;
+  
+}
+
+
+/* La lista de links también necesita ser flex por su cuenta:
+   .header solo controla a SUS hijos directos (.left y .right),
+   no le llega el flex a los <li> de adentro del <ul>. */
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;      /* separación entre link-one, link-two, link-three */
+  margin: 0;      /* saca el espacio vertical de más que trae el ul por defecto */
+  padding: 0;     /* saca la sangría izquierda que trae el ul por defecto */
+}
