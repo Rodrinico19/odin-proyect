@@ -25,4 +25,16 @@ img {
   background: #eee;
 }
 
+.title{
+  text-align: center;
+}
+
+.contenedor-padre{
+  display: flex; 
+}
+
+.contenedor-padre .text{
+  display: flex;
+  flex-direction: column;
+}
 
