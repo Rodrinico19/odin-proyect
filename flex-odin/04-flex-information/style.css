@@ -25,16 +25,21 @@ img {
   background: #eee;
 }
 
-.title{
+body{
   text-align: center;
+}
+
+.title{
+  margin-bottom: 32px;
 }
 
 .contenedor-padre{
   display: flex; 
+  justify-content: center;
+  gap: 52px;
 }
 
-.contenedor-padre .text{
-  display: flex;
-  flex-direction: column;
+.contenedor-padre .info{
+  max-width:200px;
 }
 
